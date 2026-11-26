@@ -7,11 +7,11 @@ st.set_page_config(page_title="Real-Time Fraud Detection", page_icon="🛡️", 
 
 @st.cache_resource
 def load_model():
-    return joblib.load("models/model.pkl")
+    return joblib.load("model.pkl")
 
 @st.cache_data
 def load_stream():
-    return pd.read_csv("data/demo_stream.csv")
+    return pd.read_csv("demo_stream.csv")
 
 model = load_model()
 data = load_stream()
