@@ -42,12 +42,12 @@ h1 {
 
 @st.cache_resource
 def load_model():
-    return joblib.load("model.pkl")
+    return joblib.load("models/model.pkl")
 
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("demo_stream.csv")
+    return pd.read_csv("data/demo_stream.csv")
 
 
 try:
